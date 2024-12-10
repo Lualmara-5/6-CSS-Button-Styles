@@ -3,6 +3,6 @@
 Mira el tutorial aquí: [https://youtu.be/c-4wFMGFuCg](https://youtu.be/c-4wFMGFuCg)
 
 ¡Mira una vista previa de cómo quedó!  
-![Vista previa](Img#1.jpg)
+![Vista previa](images/img1.jpg)
 
 Por: [DevBy Lualmara](https://github.com/Lualmara-5)
