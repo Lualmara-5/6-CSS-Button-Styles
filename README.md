@@ -1,6 +1,6 @@
 # ¡Adiós a los Botones Aburridos! Aprende a Animarlos con CSS
 
-Mira el tutorial aquí: [https://youtu.be/c-4wFMGFuCg](https://youtu.be/c-4wFMGFuCg)
+Mira el tutorial aquí: [https://youtu.be/](https://youtu.be/)
 
 ¡Mira una vista previa de cómo quedó!  
 ![Vista previa](images/img1.jpg)
