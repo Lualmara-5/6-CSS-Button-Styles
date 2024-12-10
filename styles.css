@@ -1,0 +1,208 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 150px;
+    background-color: #ECE5FD;
+}
+
+h1 {
+  margin-bottom: 25px;
+  color: #333;
+}
+
+h1 span{
+    color: rgb(89, 191, 255)
+}
+
+/* Contenedor de los botones */
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+    justify-content: center;
+    align-items: center; 
+    max-width: 500px; 
+    margin: 0 auto;
+}
+
+/* Estilos comunes para todos los botones */
+.animated-button{
+  position: relative;
+  padding: 10px 30px;
+  width: 200px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.animated-button:hover{
+  transform: translateY(-3px);
+}
+
+/* Estilos para el Botón 1 */
+
+.btn-1{
+  background: #61f32b;
+}
+.btn-1:hover{
+  transform: translateY(-6px) scale(1.1);
+  background: #28a745;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el Botón 2 */
+
+.btn-2{
+  background: #dc3545;
+}
+
+.btn-2:hover{
+  animation: latido 1.5s infinite ease-in-out;
+}
+
+@keyframes latido {
+  0%, 100%{
+    transform: scale(1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Estilos para el Botón 3 */
+
+.btn-3{
+  background: #5eb2ee;
+}
+
+.btn-3:active{
+  transform: translateY(3px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: #00669d;
+}
+
+/* Estilos para el Botón 4 */
+
+.btn-4 {
+  background: #ffc107;
+  overflow: hidden;
+}
+
+.btn-4 .button-text {
+  transition: 0.3s ease all;
+  position: relative;
+  z-index: 2;
+}
+
+.btn-4 .button-icon {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: -40px;
+  font-size: 20px;
+  transition: 0.3s ease, opacity 0.3s ease;
+  color:white;
+}
+
+.btn-4:hover{
+  background: #e0a800;
+}
+
+.btn-4:hover .button-text{
+  transform: translateX(-40px);
+}
+
+.btn-4:hover .button-icon{
+  right: 10px;
+  opacity: 1;
+}
+
+/* Estilos para el Botón 5 */
+
+.btn-5 {
+  background: #333;
+}
+
+@keyframes glowing {
+  0% {background-position: 0 0;}
+  50% {background-position: 400% 0;}
+  100% {background-position: 0 0;}
+}
+
+.btn-5::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  left: 0;
+  top: 0;
+  border-radius: 50px;
+}
+
+.btn-5::before {
+  content: "";
+  background: linear-gradient(
+    45deg, 
+    #FF0000, #FF7300, #FFFB00, #48FF00, 
+    #00FFD5, #002BFF, #FF00C8, #FF0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  opacity: 0;
+  }
+
+.btn-5:hover::before{
+  opacity: 1;
+}
+
+/* Estilos para el Botón 6 */
+
+.btn-6 {
+  background: #333;
+}
+
+.btn-6::before {
+  content: "";
+  background: linear-gradient(
+    45deg, 
+    #FF0000, #FF7300, #FFFB00, #48FF00, 
+    #00FFD5, #002BFF, #FF00C8, #FF0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  opacity: 0;
+  }
+
+.btn-6:hover::before{
+  opacity: 1;
+}
